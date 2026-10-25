@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+resultados/
+public/
+.DS_Store
