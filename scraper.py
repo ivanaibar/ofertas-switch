@@ -88,10 +88,11 @@ def parse(source, platform):
     cards = [n for n in root.nodes() if n.attrs.get("data-test") == "mms-product-card"]
     for card in cards:
         title = card.find("product-title")
-        link = card.find("mms-router-link-product-list-item-link")
+        link = (card.find("mms-router-link-product-list-item-link")
+                or card.find("mms-router-link-product-list-item-link_mp"))
         price_node = card.find("cofr-price product-price") or card.find("mms-price")
         if title is None or link is None or price_node is None:
-            raise ValueError("Una ficha ha cambiado de estructura; revisa los selectores.")
+            raise ValueError("Ficha no reconocida: " + (title.text()[:120] if title else "sin título"))
         name = " ".join(title.text().split())
         text = " ".join(card.text().split())
         # La categoría incluye ocasionalmente accesorios u otras plataformas.
@@ -114,7 +115,8 @@ def parse(source, platform):
         delivery = card.find("product-delivery")
         delivery_text = " ".join(delivery.text().split()) if delivery is not None else "Desconocida"
         available = card.find("mms-cofr-delivery_AVAILABLE") is not None
-        seller_match = re.search(r"Vendido (?:y enviado )?por\s+(.+?)(?:Entrega|IVA|$)", text, re.I)
+        seller_node = card.find('mms-third-party-provider-link')
+        seller = ' '.join(seller_node.text().split()) if seller_node else 'No especificado en listado'
         lower = name.lower()
         fmt = ("Game Key Card" if re.search(r"game[ -]?key", lower) else
                "Código" if re.search(r"c[oó]digo|code in|digital|descarga", lower) else
@@ -123,7 +125,7 @@ def parse(source, platform):
             referencia_centimos=reference,
             descuento=round((1-price/reference)*100, 2) if reference and reference > price else 0,
             disponible_online=available, disponibilidad=delivery_text,
-            vendedor=seller_match.group(1).strip() if seller_match else "No especificado en listado",
+            vendedor=seller,
             formato=fmt, url=url))
     next_link = next((n.attrs.get("href") for n in root.nodes()
                       if n.tag == "link" and n.attrs.get("rel") == "next"), None)

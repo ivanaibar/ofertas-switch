@@ -37,6 +37,12 @@ class ScraperTests(unittest.TestCase):
             self.assertEqual(products[0]['bajada_centimos'], 0)
             self.assertEqual(products[0]['minimo_observado_centimos'], 3000)
 
+    def test_marketplace_card(self):
+        source = '''<article data-test="mms-product-card"><a data-test="mms-router-link-product-list-item-link_mp" href="/es/product/_test-123.html"><h3 data-test="product-title">Juego Nintendo Switch 2 Test</h3></a><div data-test="cofr-price product-price"><div data-test="mms-price">39,99 € 39,99€<a href="/es/marketplace/seller/123">IVA incl.</a></div><a data-test="mms-third-party-provider-link" href="/es/marketplace/seller/123">Tienda de prueba</a></div></article>'''
+        rows, _ = parse(source, 'Switch 2')
+        self.assertEqual(rows[0]['precio_centimos'],3999)
+        self.assertEqual(rows[0]['vendedor'],'Tienda de prueba')
+
 
 if __name__ == '__main__':
     unittest.main()
