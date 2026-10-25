@@ -82,6 +82,11 @@ def trusted(url):
     return p.scheme == "https" and p.netloc == "www.mediamarkt.es"
 
 
+def paging(source):
+    match = re.search(r'"currentPage":(\d+),"pageCount":(\d+),"pageSize":(\d+),"maxPage":(\d+)', source)
+    return tuple(map(int, match.groups())) if match else None
+
+
 def parse(source, platform):
     root = Document(source).root
     products = []
@@ -183,7 +188,7 @@ def report(products, target, stamp, warnings):
     target.write_text('''<!doctype html><html lang="es"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Ofertas Switch · MediaMarkt</title>
 <style>body{font:16px system-ui;background:#f4f5f8;color:#19202c;margin:0;padding:32px}main{max-width:1500px;margin:auto}h1{letter-spacing:-1px}input,select{padding:12px;border:1px solid #ccd;border-radius:8px;margin:6px}table{border-collapse:collapse;width:100%;background:white}td,th{padding:14px;text-align:left;border-bottom:1px solid #eee}a{color:#b00020}th{background:#19202c;color:white}small{color:#565b65}.scroll{overflow:auto}#count{font-weight:bold;margin:16px 0}</style>
-<main><h1>Ofertas de Switch y Switch 2</h1><p>MediaMarkt España · ''' + esc(stamp) + '''</p><p>''' + esc(status) + '''</p>
+<main><h1>Ofertas de Switch y Switch 2</h1><p>MediaMarkt España · ''' + esc(stamp) + '''</p><p style="padding:14px;background:#fff0ca;border-radius:8px">''' + esc(status) + '''</p>
 <small>Precio del juego, sin gastos de envío. Referencia = precio tachado de la tienda, no mínimo histórico.
 La bajada compara con tu ejecución anterior. «No especificado» no garantiza cartucho completo ni vendedor MediaMarkt.</small>
 <p><input id="q" placeholder="Buscar juego" aria-label="Buscar juego"><select id="platform" aria-label="Consola"><option value="">Ambas consolas</option><option>Switch</option><option>Switch 2</option></select>
@@ -224,13 +229,21 @@ def main():
             time.sleep(pause)
             print(f'{platform}: página {page}', file=sys.stderr)
             try:
-                batch, next_url = parse(fetch(url), platform)
+                source = fetch(url)
+                batch, next_url = parse(source, platform)
                 if not batch:
                     raise ValueError('Sin fichas reconocibles: posible bloqueo o cambio de HTML')
                 fresh = [p for p in batch if p['url'] not in products]
                 if not fresh:
                     raise ValueError('La página repite productos; recorrido detenido')
                 products.update((p['url'], p) for p in batch)
+                site_paging = paging(source)
+                if site_paging:
+                    current, count, size, maximum = site_paging
+                    if current >= maximum and count > maximum:
+                        warnings.append(f'{platform}: límite de paginación de MediaMarkt (primeras {maximum} de {count} páginas; hasta {maximum*size} fichas)')
+                        url = None
+                        break
                 url = next_url
             except (HTTPError, URLError, TimeoutError, ValueError) as e:
                 warnings.append(f'{platform}: {e}'); break

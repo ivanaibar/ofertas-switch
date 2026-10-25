@@ -5,9 +5,11 @@ import shutil
 from pathlib import Path
 
 
-def prepare(source, target):
+def prepare(source, target, allow_catalog_limit=False):
     data = json.loads((source/'productos.json').read_text(encoding='utf-8'))
-    if data.get('avisos') or not data.get('productos'):
+    warnings = data.get('avisos', [])
+    acceptable = allow_catalog_limit and all(': límite de paginación de MediaMarkt (' in w for w in warnings)
+    if (warnings and not acceptable) or not data.get('productos'):
         raise ValueError('No se publica una consulta parcial o vacía')
     # Verifica las entradas antes de sustituir cualquier fichero.
     files = [('ofertas.html','index.html'), ('productos.json','productos.json'),
@@ -24,5 +26,6 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--origen',type=Path,default=Path('resultados'))
     ap.add_argument('--destino',type=Path,default=Path('public'))
+    ap.add_argument('--permitir-limite-catalogo',action='store_true',help='Permite solo el límite conocido de 30 páginas, siempre visible en el informe')
     args = ap.parse_args()
-    prepare(args.origen,args.destino)
+    prepare(args.origen,args.destino,args.permitir_limite_catalogo)

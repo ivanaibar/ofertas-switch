@@ -21,6 +21,8 @@ La URL se muestra al terminar la configuración, pero solo estará disponible tr
 
 El historial se conserva en `data/historial.sqlite`, dentro del repositorio público. La web solo recibe `index.html`, `productos.json` y `productos.csv`. Los cambios del historial no disparan otro workflow. Si el scraper se bloquea, obtiene una consulta parcial o no pasa las pruebas, se detiene el despliegue y se mantiene la última web publicada con su fecha original. Si es la primera ejecución, no se publicará ninguna web hasta obtener una consulta completa.
 
+**Cobertura del despliegue:** la tienda limita sus listados a 30 páginas por consulta (12 productos por página). Cuando la categoría supera ese límite, vuelve a servir la primera página. La web publicada acepta exclusivamente esta limitación conocida y muestra un aviso de recorrido parcial: primeras 360 fichas de Switch; la categoría de Switch 2 cabe actualmente dentro de las 30 páginas. No representa todas las ofertas de Switch. Cualquier otro fallo parcial (red, bloqueo, formato inesperado o límite local de ejecución) impide publicar, manteniendo la web anterior. Esta es la excepción explícita a la regla general de no publicar consultas parciales. Los filtros públicos dieron redirecciones circulares y la interfaz de consulta rechazó el acceso durante la configuración; no se ha intentado sortear ese rechazo.
+
 Los runners estándar de Actions y Pages son gratuitos para este repositorio público dentro de las condiciones y límites de GitHub. MediaMarkt podría bloquear las IP de los runners; en ese caso el workflow fallará sin intentar sortear el bloqueo. La ejecución en GitHub y la publicación deben comprobarse en el primer despliegue.
 
 ## Uso

@@ -38,11 +38,17 @@ jobs:
           if [ -f data/historial.sqlite ]; then
             cp data/historial.sqlite resultados/historial.sqlite
           fi
-      - name: Consultar categorías completas
-        # Un recorrido parcial termina con código 2 y no sustituye la web publicada.
-        run: python scraper.py --salida resultados --max-paginas 200 --pausa 3
+      - name: Consultar categorías disponibles
+        # El código 2 solo se acepta si Preparar web valida el límite conocido.
+        run: |
+          python - <<'PY'
+          import subprocess, sys
+          result = subprocess.run([sys.executable, 'scraper.py', '--salida', 'resultados', '--max-paginas', '200', '--pausa', '3'])
+          if result.returncode not in (0, 2):
+              sys.exit(result.returncode)
+          PY
       - name: Preparar web
-        run: python preparar_web.py --origen resultados --destino public
+        run: python preparar_web.py --origen resultados --destino public --permitir-limite-catalogo
       - name: Conservar historial para siguientes ejecuciones
         run: |
           cp resultados/historial.sqlite data/historial.sqlite
