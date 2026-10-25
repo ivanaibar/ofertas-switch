@@ -38,9 +38,28 @@ jobs:
           if [ -f data/historial.sqlite ]; then
             cp data/historial.sqlite resultados/historial.sqlite
           fi
+      - name: Comprobar si los datos incluyen carátulas
+        id: datos
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          from urllib.request import urlopen
+          snapshot = Path('data/productos.json')
+          if snapshot.exists():
+              data = json.loads(snapshot.read_text(encoding='utf-8'))
+          else:
+              with urlopen('https://ivanaibar.github.io/ofertas-switch/productos.json',timeout=30) as response:
+                  data = json.load(response)
+          refresh = os.environ['EVENT_NAME'] != 'push' or not data.get('productos') or any('imagen' not in product for product in data['productos'])
+          with open(os.environ['GITHUB_OUTPUT'],'a') as output:
+              print('refresh=' + str(refresh).lower(), file=output)
+          PY
       - name: Consultar categorías disponibles
         id: scrape
-        if: github.event_name != 'push'
+        if: steps.datos.outputs.refresh == 'true'
         # El código 2 solo se acepta si Preparar web valida el límite conocido.
         run: |
           python - <<'PY'
@@ -50,7 +69,7 @@ jobs:
               sys.exit(result.returncode)
           PY
       - name: Regenerar presentación con la última consulta
-        if: github.event_name == 'push'
+        if: steps.datos.outputs.refresh != 'true'
         run: python renderizar_web.py
       - name: Preparar web
         run: python preparar_web.py --origen resultados --destino public --permitir-limite-catalogo

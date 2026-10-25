@@ -122,6 +122,11 @@ def parse(source, platform):
         available = card.find("mms-cofr-delivery_AVAILABLE") is not None
         seller_node = card.find('mms-third-party-provider-link')
         seller = ' '.join(seller_node.text().split()) if seller_node else 'No especificado en listado'
+        picture = card.find('product-image')
+        image_node = next((n for n in picture.nodes() if n.tag == 'img'), None) if picture else None
+        image_url = image_node.attrs.get('src', '') if image_node else ''
+        if urlsplit(image_url).scheme != 'https' or urlsplit(image_url).hostname != 'assets.mmsrg.com':
+            image_url = ''
         lower = name.lower()
         fmt = ("Game Key Card" if re.search(r"game[ -]?key", lower) else
                "Código" if re.search(r"c[oó]digo|code in|digital|descarga", lower) else
@@ -131,7 +136,7 @@ def parse(source, platform):
             descuento=round((1-price/reference)*100, 2) if reference and reference > price else 0,
             disponible_online=available, disponibilidad=delivery_text,
             vendedor=seller,
-            formato=fmt, url=url))
+            formato=fmt, imagen=image_url, url=url))
     next_link = next((n.attrs.get("href") for n in root.nodes()
                       if n.tag == "link" and n.attrs.get("rel") == "next"), None)
     return products, urljoin(BASE, next_link) if next_link else None
@@ -179,7 +184,13 @@ def report(products, target, stamp, warnings):
     esc = html.escape
     rows = []
     for p in products:
-        fields = [f'<a href="{esc(p["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{esc(p["nombre"])}</a>',
+        image_url = p.get('imagen', '')
+        valid_image = urlsplit(image_url).scheme == 'https' and urlsplit(image_url).hostname == 'assets.mmsrg.com'
+        cover = (f'<img class="cover-image" src="{esc(image_url, quote=True)}" alt="Carátula de {esc(p["nombre"], quote=True)}" width="72" height="100" loading="lazy" decoding="async">'
+                 if valid_image else '<span class="cover-placeholder">Sin carátula</span>')
+        cover_link = f'<a class="cover-link" href="{esc(p["url"], quote=True)}" target="_blank" rel="noopener noreferrer" aria-label="Ver {esc(p["nombre"], quote=True)} en MediaMarkt">{cover}</a>'
+        fields = [cover_link,
+                  f'<a href="{esc(p["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{esc(p["nombre"])}</a>',
                   '<span class="discount">' + f'{p["descuento"]:g}'.replace('.', ',') + ' %</span>',
                   euro(p['precio_centimos']), esc(p['consola']), euro(p['referencia_centimos']),
                   euro(p['bajada_centimos']), esc(p['formato']),
@@ -188,7 +199,7 @@ def report(products, target, stamp, warnings):
     status = 'Recorrido completo' if not warnings else 'Recorrido parcial: ' + '; '.join(warnings)
     target.write_text('''<!doctype html><html lang="es"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Ofertas Switch · MediaMarkt</title>
-<style>body{font:16px system-ui;background:#f4f5f8;color:#19202c;margin:0;padding:32px}main{max-width:1500px;margin:auto}h1{letter-spacing:-1px}input,select{padding:12px;border:1px solid #ccd;border-radius:8px;margin:6px}table{border-collapse:collapse;width:100%;background:white}td,th{padding:14px;text-align:left;border-bottom:1px solid #eee}a{color:#b00020}th{background:#19202c;color:white}small{color:#565b65}.scroll{overflow:auto}#count{font-weight:bold;margin:16px 0}.discount{display:inline-block;color:#09613e;background:#e3f6eb;padding:7px 10px;border-radius:7px;font-size:18px;font-weight:800;white-space:nowrap}#sort-discount{color:inherit;background:transparent;border:0;font:inherit;font-weight:700;padding:6px 0;cursor:pointer;white-space:nowrap}#sort-discount:focus-visible{outline:2px solid white;outline-offset:3px}td:first-child{min-width:160px;max-width:260px}td:nth-child(3){white-space:nowrap}@media(max-width:600px){body{padding:16px}td,th{padding:12px 8px}td:first-child{min-width:140px;max-width:160px}.discount{font-size:17px;padding:7px}h1{font-size:26px}}</style>
+<style>body{font:16px system-ui;background:#f4f5f8;color:#19202c;margin:0;padding:32px}main{max-width:1500px;margin:auto}h1{letter-spacing:-1px}input,select{padding:12px;border:1px solid #ccd;border-radius:8px;margin:6px}table{border-collapse:collapse;width:100%;background:white}td,th{padding:14px;text-align:left;border-bottom:1px solid #eee;vertical-align:middle}a{color:#b00020}th{background:#19202c;color:white}small{color:#565b65}.scroll{overflow:auto}#count{font-weight:bold;margin:16px 0}.discount{display:inline-block;color:#09613e;background:#e3f6eb;padding:7px 10px;border-radius:7px;font-size:18px;font-weight:800;white-space:nowrap}#sort-discount{color:inherit;background:transparent;border:0;font:inherit;font-weight:700;padding:6px 0;cursor:pointer;white-space:nowrap}#sort-discount:focus-visible{outline:2px solid white;outline-offset:3px}td:first-child{width:72px;min-width:72px}td:nth-child(2){min-width:160px;max-width:260px}td:nth-child(4){white-space:nowrap}.cover-link{width:72px;height:100px;display:flex;align-items:center;justify-content:center;border-radius:5px;background:#f4f5f8;text-decoration:none;overflow:hidden}.cover-image{width:72px;height:100px;object-fit:contain}.cover-placeholder{font-size:11px;color:#676b75;text-align:center}.cover-link:focus-visible{outline:3px solid #b00020;outline-offset:3px}@media(max-width:600px){body{padding:16px}td,th{padding:12px 8px}td:first-child{width:56px;min-width:56px}td:nth-child(2){min-width:130px;max-width:150px}.cover-link,.cover-image{width:56px;height:78px}.discount{font-size:17px;padding:7px}h1{font-size:26px}}</style>
 <main><h1>Ofertas de Switch y Switch 2</h1><p>MediaMarkt España · ''' + esc(stamp) + '''</p><p style="padding:14px;background:#fff0ca;border-radius:8px">''' + esc(status) + '''</p>
 <small>Precio del juego, sin gastos de envío. Referencia = precio tachado de la tienda, no mínimo histórico.
 La bajada compara con tu ejecución anterior. «No especificado» no garantiza cartucho completo ni vendedor MediaMarkt.</small>
@@ -196,14 +207,14 @@ La bajada compara con tu ejecución anterior. «No especificado» no garantiza c
 <input id="max" type="number" min="0" placeholder="Precio máximo €" aria-label="Precio máximo">
 <label><input id="offers" type="checkbox" checked>Solo descuentos o bajadas</label></p>
 <p><label for="sort">Ordenar por:</label><select id="sort" aria-label="Ordenar por"><option value="discount-desc">Mayor % de descuento primero</option><option value="discount-asc">Menor % de descuento primero</option></select></p><div id="count" aria-live="polite"></div>
-<div class="scroll"><table><thead><tr><th scope="col">Juego</th><th id="discount-heading" scope="col" aria-sort="descending"><button id="sort-discount" type="button" aria-label="Ordenar por porcentaje de descuento, de menor a mayor">% descuento <span id="sort-arrow" aria-hidden="true">↓</span></button></th>''' + ''.join('<th scope="col">'+s+'</th>' for s in ['Precio','Consola','Referencia','Bajada','Formato','Disponibilidad','Vendedor']) + '''</tr></thead><tbody>''' + ''.join(rows) + '''</tbody></table></div>
+<div class="scroll"><table><thead><tr><th scope="col">Carátula</th><th scope="col">Juego</th><th id="discount-heading" scope="col" aria-sort="descending"><button id="sort-discount" type="button" aria-label="Ordenar por porcentaje de descuento, de menor a mayor">% descuento <span id="sort-arrow" aria-hidden="true">↓</span></button></th>''' + ''.join('<th scope="col">'+s+'</th>' for s in ['Precio','Consola','Referencia','Bajada','Formato','Disponibilidad','Vendedor']) + '''</tr></thead><tbody>''' + ''.join(rows) + '''</tbody></table></div>
 <script>
 const $=id=>document.getElementById(id);
 const tbody=document.querySelector('tbody');
 const rows=Array.from(tbody.rows);
 function update(){
   const ascending=$('sort').value==='discount-asc';
-  rows.sort((a,b)=>(ascending?1:-1)*(Number(a.dataset.discount)-Number(b.dataset.discount))||Number(a.dataset.price)-Number(b.dataset.price)||a.cells[0].textContent.localeCompare(b.cells[0].textContent,'es'));
+  rows.sort((a,b)=>(ascending?1:-1)*(Number(a.dataset.discount)-Number(b.dataset.discount))||Number(a.dataset.price)-Number(b.dataset.price)||a.cells[1].textContent.localeCompare(b.cells[1].textContent,'es'));
   tbody.append(...rows);
   $('discount-heading').setAttribute('aria-sort',ascending?'ascending':'descending');
   $('sort-arrow').textContent=ascending?'↑':'↓';
@@ -211,13 +222,14 @@ function update(){
   let n=0;
   rows.forEach(r=>{
     const c=r.cells;
-    const drop=parseFloat(c[5].textContent.replace(',','.'))||0;
-    const show=c[0].textContent.toLowerCase().includes($('q').value.toLowerCase())&&(!$('platform').value||c[3].textContent===$('platform').value)&&(!$('max').value||Number(r.dataset.price)<=Number($('max').value)*100)&&(!$('offers').checked||Number(r.dataset.discount)>0||drop>0);
+    const drop=parseFloat(c[6].textContent.replace(',','.'))||0;
+    const show=c[1].textContent.toLowerCase().includes($('q').value.toLowerCase())&&(!$('platform').value||c[4].textContent===$('platform').value)&&(!$('max').value||Number(r.dataset.price)<=Number($('max').value)*100)&&(!$('offers').checked||Number(r.dataset.discount)>0||drop>0);
     r.hidden=!show;if(show)n++;
   });
   $('count').textContent=n+' juegos';
 }
 document.querySelectorAll('input,select').forEach(e=>e.addEventListener('input',update));
+document.querySelectorAll('.cover-image').forEach(img=>img.addEventListener('error',()=>{const missing=document.createElement('span');missing.className='cover-placeholder';missing.textContent='Sin carátula';img.replaceWith(missing)}));
 $('sort-discount').addEventListener('click',()=>{$('sort').value=$('sort').value==='discount-desc'?'discount-asc':'discount-desc';update()});
 update();
 </script></main></html>''', encoding='utf-8')
