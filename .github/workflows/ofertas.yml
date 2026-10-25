@@ -39,6 +39,8 @@ jobs:
             cp data/historial.sqlite resultados/historial.sqlite
           fi
       - name: Consultar categorías disponibles
+        id: scrape
+        if: github.event_name != 'push'
         # El código 2 solo se acepta si Preparar web valida el límite conocido.
         run: |
           python - <<'PY'
@@ -47,14 +49,19 @@ jobs:
           if result.returncode not in (0, 2):
               sys.exit(result.returncode)
           PY
+      - name: Regenerar presentación con la última consulta
+        if: github.event_name == 'push'
+        run: python renderizar_web.py
       - name: Preparar web
         run: python preparar_web.py --origen resultados --destino public --permitir-limite-catalogo
       - name: Conservar historial para siguientes ejecuciones
+        if: steps.scrape.outcome == 'success'
         run: |
           cp resultados/historial.sqlite data/historial.sqlite
+          cp resultados/productos.json data/productos.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/historial.sqlite
+          git add data/historial.sqlite data/productos.json
           if ! git diff --cached --quiet; then
             git commit -m 'Actualizar historial de precios'
             git push origin "HEAD:$GITHUB_REF_NAME"

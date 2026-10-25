@@ -180,22 +180,47 @@ def report(products, target, stamp, warnings):
     rows = []
     for p in products:
         fields = [f'<a href="{esc(p["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{esc(p["nombre"])}</a>',
-                  esc(p['consola']), euro(p['precio_centimos']), euro(p['referencia_centimos']),
-                  f'{p["descuento"]:g} %', euro(p['bajada_centimos']), esc(p['formato']),
+                  '<span class="discount">' + f'{p["descuento"]:g}'.replace('.', ',') + ' %</span>',
+                  euro(p['precio_centimos']), esc(p['consola']), euro(p['referencia_centimos']),
+                  euro(p['bajada_centimos']), esc(p['formato']),
                   esc(p['disponibilidad']), esc(p['vendedor'])]
-        rows.append('<tr>' + ''.join('<td>'+f+'</td>' for f in fields) + '</tr>')
+        rows.append(f'<tr data-discount="{float(p["descuento"])}" data-price="{int(p["precio_centimos"])}">' + ''.join('<td>'+f+'</td>' for f in fields) + '</tr>')
     status = 'Recorrido completo' if not warnings else 'Recorrido parcial: ' + '; '.join(warnings)
     target.write_text('''<!doctype html><html lang="es"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Ofertas Switch · MediaMarkt</title>
-<style>body{font:16px system-ui;background:#f4f5f8;color:#19202c;margin:0;padding:32px}main{max-width:1500px;margin:auto}h1{letter-spacing:-1px}input,select{padding:12px;border:1px solid #ccd;border-radius:8px;margin:6px}table{border-collapse:collapse;width:100%;background:white}td,th{padding:14px;text-align:left;border-bottom:1px solid #eee}a{color:#b00020}th{background:#19202c;color:white}small{color:#565b65}.scroll{overflow:auto}#count{font-weight:bold;margin:16px 0}</style>
+<style>body{font:16px system-ui;background:#f4f5f8;color:#19202c;margin:0;padding:32px}main{max-width:1500px;margin:auto}h1{letter-spacing:-1px}input,select{padding:12px;border:1px solid #ccd;border-radius:8px;margin:6px}table{border-collapse:collapse;width:100%;background:white}td,th{padding:14px;text-align:left;border-bottom:1px solid #eee}a{color:#b00020}th{background:#19202c;color:white}small{color:#565b65}.scroll{overflow:auto}#count{font-weight:bold;margin:16px 0}.discount{display:inline-block;color:#09613e;background:#e3f6eb;padding:7px 10px;border-radius:7px;font-size:18px;font-weight:800;white-space:nowrap}#sort-discount{color:inherit;background:transparent;border:0;font:inherit;font-weight:700;padding:6px 0;cursor:pointer;white-space:nowrap}#sort-discount:focus-visible{outline:2px solid white;outline-offset:3px}td:first-child{min-width:160px;max-width:260px}td:nth-child(3){white-space:nowrap}@media(max-width:600px){body{padding:16px}td,th{padding:12px 8px}td:first-child{min-width:140px;max-width:160px}.discount{font-size:17px;padding:7px}h1{font-size:26px}}</style>
 <main><h1>Ofertas de Switch y Switch 2</h1><p>MediaMarkt España · ''' + esc(stamp) + '''</p><p style="padding:14px;background:#fff0ca;border-radius:8px">''' + esc(status) + '''</p>
 <small>Precio del juego, sin gastos de envío. Referencia = precio tachado de la tienda, no mínimo histórico.
 La bajada compara con tu ejecución anterior. «No especificado» no garantiza cartucho completo ni vendedor MediaMarkt.</small>
 <p><input id="q" placeholder="Buscar juego" aria-label="Buscar juego"><select id="platform" aria-label="Consola"><option value="">Ambas consolas</option><option>Switch</option><option>Switch 2</option></select>
 <input id="max" type="number" min="0" placeholder="Precio máximo €" aria-label="Precio máximo">
-<label><input id="offers" type="checkbox" checked>Solo descuentos o bajadas</label></p><div id="count"></div>
-<div class="scroll"><table><thead><tr>''' + ''.join('<th>'+s+'</th>' for s in ['Juego','Consola','Precio','Referencia','Descuento','Bajada','Formato','Disponibilidad','Vendedor']) + '''</tr></thead><tbody>''' + ''.join(rows) + '''</tbody></table></div>
-<script>const $=id=>document.getElementById(id);function update(){let n=0;document.querySelectorAll('tbody tr').forEach(r=>{const c=r.cells;const num=i=>parseFloat(c[i].textContent.replace(',','.'))||0;const show=c[0].textContent.toLowerCase().includes($('q').value.toLowerCase())&&(!$('platform').value||c[1].textContent===$('platform').value)&&(!$('max').value||num(2)<=Number($('max').value))&&(!$('offers').checked||num(4)>0||num(5)>0);r.hidden=!show;if(show)n++});$('count').textContent=n+' juegos'}document.querySelectorAll('input,select').forEach(e=>e.addEventListener('input',update));update();</script></main></html>''', encoding='utf-8')
+<label><input id="offers" type="checkbox" checked>Solo descuentos o bajadas</label></p>
+<p><label for="sort">Ordenar por:</label><select id="sort" aria-label="Ordenar por"><option value="discount-desc">Mayor % de descuento primero</option><option value="discount-asc">Menor % de descuento primero</option></select></p><div id="count" aria-live="polite"></div>
+<div class="scroll"><table><thead><tr><th scope="col">Juego</th><th id="discount-heading" scope="col" aria-sort="descending"><button id="sort-discount" type="button" aria-label="Ordenar por porcentaje de descuento, de menor a mayor">% descuento <span id="sort-arrow" aria-hidden="true">↓</span></button></th>''' + ''.join('<th scope="col">'+s+'</th>' for s in ['Precio','Consola','Referencia','Bajada','Formato','Disponibilidad','Vendedor']) + '''</tr></thead><tbody>''' + ''.join(rows) + '''</tbody></table></div>
+<script>
+const $=id=>document.getElementById(id);
+const tbody=document.querySelector('tbody');
+const rows=Array.from(tbody.rows);
+function update(){
+  const ascending=$('sort').value==='discount-asc';
+  rows.sort((a,b)=>(ascending?1:-1)*(Number(a.dataset.discount)-Number(b.dataset.discount))||Number(a.dataset.price)-Number(b.dataset.price)||a.cells[0].textContent.localeCompare(b.cells[0].textContent,'es'));
+  tbody.append(...rows);
+  $('discount-heading').setAttribute('aria-sort',ascending?'ascending':'descending');
+  $('sort-arrow').textContent=ascending?'↑':'↓';
+  $('sort-discount').setAttribute('aria-label','Ordenar por porcentaje de descuento, '+(ascending?'de mayor a menor':'de menor a mayor'));
+  let n=0;
+  rows.forEach(r=>{
+    const c=r.cells;
+    const drop=parseFloat(c[5].textContent.replace(',','.'))||0;
+    const show=c[0].textContent.toLowerCase().includes($('q').value.toLowerCase())&&(!$('platform').value||c[3].textContent===$('platform').value)&&(!$('max').value||Number(r.dataset.price)<=Number($('max').value)*100)&&(!$('offers').checked||Number(r.dataset.discount)>0||drop>0);
+    r.hidden=!show;if(show)n++;
+  });
+  $('count').textContent=n+' juegos';
+}
+document.querySelectorAll('input,select').forEach(e=>e.addEventListener('input',update));
+$('sort-discount').addEventListener('click',()=>{$('sort').value=$('sort').value==='discount-desc'?'discount-asc':'discount-desc';update()});
+update();
+</script></main></html>''', encoding='utf-8')
 
 
 def main():
