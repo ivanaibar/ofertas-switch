@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-10-31T05:55:11.352579+00:00",
+  "fecha": "2026-10-31T12:44:53.897783+00:00",
   "avisos": [
-    "Switch: límite de paginación de MediaMarkt (primeras 30 de 118 páginas; hasta 360 fichas)"
+    "Switch: límite de paginación de MediaMarkt (primeras 30 de 103 páginas; hasta 360 fichas)"
   ],
   "total_observado": 689,
   "productos": [
@@ -806,22 +806,6 @@
       "minimo_observado_centimos": 6705
     },
     {
-      "nombre": "Juego Nintendo Switch 2 - SWITCH 2 DISGAEA 7 COMPLETE - DELUXE EDITION, Anime",
-      "consola": "Switch 2",
-      "precio_centimos": 7640,
-      "referencia_centimos": 9168,
-      "descuento": 16.67,
-      "disponible_online": false,
-      "disponibilidad": "Entrega 13/11/2026 - 17/11/2026",
-      "vendedor": "ShopInpex",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_157423826?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-disgaea-7-complete-anime-157423818.html",
-      "anterior_centimos": 7640,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 6951
-    },
-    {
       "nombre": "Juego Nintendo Switch 2 - 10016298, Juego de rol",
       "consola": "Switch 2",
       "precio_centimos": 7979,
@@ -865,7 +849,7 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_170852959?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-nin10016295-miscelaneo-167489559.html",
-      "anterior_centimos": 9000,
+      "anterior_centimos": 9255,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 9000
     },
@@ -881,8 +865,8 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_170854869?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-nin10016293-accion-167489494.html",
-      "anterior_centimos": 9927,
-      "bajada_centimos": 492,
+      "anterior_centimos": 9435,
+      "bajada_centimos": 0,
       "minimo_observado_centimos": 9435
     },
     {
@@ -897,8 +881,8 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_170855068?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-nin10016292-accion-167489693.html",
-      "anterior_centimos": 9927,
-      "bajada_centimos": 492,
+      "anterior_centimos": 9435,
+      "bajada_centimos": 0,
       "minimo_observado_centimos": 9435
     },
     {
@@ -945,8 +929,8 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_170853973?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-10016221-miscelaneo-167489722.html",
-      "anterior_centimos": 10920,
-      "bajada_centimos": 392,
+      "anterior_centimos": 10528,
+      "bajada_centimos": 0,
       "minimo_observado_centimos": 9618
     },
     {
@@ -1089,8 +1073,8 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_170851719?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-nin10016222-accion-167488487.html",
-      "anterior_centimos": 10092,
-      "bajada_centimos": 1090,
+      "anterior_centimos": 9002,
+      "bajada_centimos": 0,
       "minimo_observado_centimos": 9002
     },
     {
@@ -1140,22 +1124,6 @@
       "anterior_centimos": 9867,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 9867
-    },
-    {
-      "nombre": "Juego Nintendo Switch 2 - Signature Edition [NSW2] (F/I), Simulaciones",
-      "consola": "Switch 2",
-      "precio_centimos": 7527,
-      "referencia_centimos": 8999,
-      "descuento": 16.36,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 05/11/2026 - 09/11/2026",
-      "vendedor": "LEASI ES",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_173841006?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-signature-edition-nsw2-fi-simulaciones-173242246.html",
-      "anterior_centimos": 7527,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 7432
     },
     {
       "nombre": "Nintendo Switch Otome Daoshi: Fighting for Love",
@@ -1222,6 +1190,22 @@
       "minimo_observado_centimos": 5099
     },
     {
+      "nombre": "Nintendo Switch 2 Adorable Adventures (Game Key Card)",
+      "consola": "Switch 2",
+      "precio_centimos": 2999,
+      "referencia_centimos": 3499,
+      "descuento": 14.29,
+      "disponible_online": false,
+      "disponibilidad": "Entrega a partir de 28/01/2027",
+      "vendedor": "No especificado en listado",
+      "formato": "Game Key Card",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_187150236?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-adorable-adventures-game-key-card-1678218.html",
+      "anterior_centimos": 3499,
+      "bajada_centimos": 500,
+      "minimo_observado_centimos": 2999
+    },
+    {
       "nombre": "Nintendo Switch Outbound. Ed. Colecionista",
       "consola": "Switch",
       "precio_centimos": 6099,
@@ -1284,22 +1268,6 @@
       "anterior_centimos": 3490,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 3490
-    },
-    {
-      "nombre": "Juego Nintendo Switch 2 - SWITCH 2 BRAVELY DEFAULT FLYING FAIRY, Juego de rol",
-      "consola": "Switch 2",
-      "precio_centimos": 4539,
-      "referencia_centimos": 5174,
-      "descuento": 12.27,
-      "disponible_online": false,
-      "disponibilidad": "Entrega 09/11/2026 - 12/11/2026",
-      "vendedor": "TDtienda",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_154058223?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-bravely-default-flying-fairy-remaster-juego-de-rol-154058216.html",
-      "anterior_centimos": 4156,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 4156
     },
     {
       "nombre": "Nintendo Switch 2 Gear.Club Unlimited 3",
@@ -1702,6 +1670,22 @@
       "minimo_observado_centimos": 1399
     },
     {
+      "nombre": "Nintendo Switch Minecraft",
+      "consola": "Switch",
+      "precio_centimos": 2799,
+      "referencia_centimos": 2999,
+      "descuento": 6.67,
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 03/11/2026",
+      "vendedor": "No especificado en listado",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_174088614?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-minecraft-1416263.html",
+      "anterior_centimos": 2999,
+      "bajada_centimos": 200,
+      "minimo_observado_centimos": 2799
+    },
+    {
       "nombre": "Nintendo Switch 2 Hollow Knight & Hollow Knight",
       "consola": "Switch 2",
       "precio_centimos": 4199,
@@ -1844,6 +1828,22 @@
       "anterior_centimos": 4699,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 4699
+    },
+    {
+      "nombre": "Nintendo Switch 2 Moonlighter 2: The Endless Vault Collector Edition",
+      "consola": "Switch 2",
+      "precio_centimos": 7999,
+      "referencia_centimos": 8499,
+      "descuento": 5.88,
+      "disponible_online": false,
+      "disponibilidad": "Entrega a partir de 27/11/2026",
+      "vendedor": "No especificado en listado",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_187671819?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-moonlighter-2-the-endless-vault-collector-edition-1678560.html",
+      "anterior_centimos": 8499,
+      "bajada_centimos": 500,
+      "minimo_observado_centimos": 7999
     },
     {
       "nombre": "Nintendo Switch 2 Terranigma (Edición Steelbook)",
@@ -2193,7 +2193,7 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_154058180?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-the-legend-of-zelda-breath-of-the-wild-aventura-154058178.html",
-      "anterior_centimos": 8440,
+      "anterior_centimos": 8446,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 8440
     },
@@ -2278,22 +2278,6 @@
       "minimo_observado_centimos": 4498
     },
     {
-      "nombre": "Juego Nintendo Switch - SWITCH LOONEY TUNES: WACKY WORLD OF SPORTS, Deportes",
-      "consola": "Switch",
-      "precio_centimos": 2588,
-      "referencia_centimos": 2640,
-      "descuento": 1.97,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 04/11/2026 - 06/11/2026",
-      "vendedor": "MS2 Digital",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_145814409?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-looney-tunes-wacky-world-of-sports-142442453.html",
-      "anterior_centimos": 2013,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 2013
-    },
-    {
       "nombre": "Juego Nintendo Switch - SWITCH METAL SLUG TACTICS, Acción",
       "consola": "Switch",
       "precio_centimos": 3132,
@@ -2324,22 +2308,6 @@
       "anterior_centimos": 3433,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 3433
-    },
-    {
-      "nombre": "Juego Nintendo Switch 2 - Moonlight Peaks Nintendo Switch 2, Simulaciones",
-      "consola": "Switch 2",
-      "precio_centimos": 5836,
-      "referencia_centimos": 5953,
-      "descuento": 1.97,
-      "disponible_online": false,
-      "disponibilidad": "Entrega 24/11/2026 - 26/11/2026",
-      "vendedor": "Electro MGD",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_179667908?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-moonlight-peaks-nintendo-switch-2-simulaciones-179667791.html",
-      "anterior_centimos": 5836,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 5836
     },
     {
       "nombre": "Juego Nintendo Switch 2 - SnowRunner, para Nintendo Switch 2, Estándar, Género Simulaciones, Simulaciones",
@@ -2374,20 +2342,20 @@
       "minimo_observado_centimos": 5210
     },
     {
-      "nombre": "Juego Nintendo Switch 2 - SWITCH 2 VIRTUA FIGHTER 5 R.E.V.O. WORLD STAGE 30T, Acción",
-      "consola": "Switch 2",
-      "precio_centimos": 6499,
-      "referencia_centimos": 6629,
-      "descuento": 1.96,
-      "disponible_online": false,
-      "disponibilidad": "Entrega 16/11/2026 - 18/11/2026",
-      "vendedor": "Electro MGD",
+      "nombre": "Juego Nintendo Switch - SWITCH LOONEY TUNES: WACKY WORLD OF SPORTS, Deportes",
+      "consola": "Switch",
+      "precio_centimos": 2570,
+      "referencia_centimos": 2621,
+      "descuento": 1.95,
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 04/11/2026 - 06/11/2026",
+      "vendedor": "MS2 Digital",
       "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_175388410?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-virtua-fighter-5-revo-world-stage-30th-anniversary-edition-ns2-juego-de-lucha-172073134.html",
-      "anterior_centimos": 5360,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 5360
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_145814409?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-looney-tunes-wacky-world-of-sports-142442453.html",
+      "anterior_centimos": 2588,
+      "bajada_centimos": 18,
+      "minimo_observado_centimos": 2013
     },
     {
       "nombre": "Juego Nintendo Switch 2 - SWITCH 2 REANIMAL, Terror",
@@ -3766,22 +3734,6 @@
       "minimo_observado_centimos": 2799
     },
     {
-      "nombre": "Nintendo Switch Minecraft",
-      "consola": "Switch",
-      "precio_centimos": 2999,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 03/11/2026",
-      "vendedor": "No especificado en listado",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_174088614?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-minecraft-1416263.html",
-      "anterior_centimos": 2999,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 2799
-    },
-    {
       "nombre": "Nintendo Switch Just Dance 2026 Edition (Código de descarga)",
       "consola": "Switch",
       "precio_centimos": 2999,
@@ -4932,22 +4884,6 @@
       "anterior_centimos": 3499,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 3099
-    },
-    {
-      "nombre": "Nintendo Switch 2 Adorable Adventures (Game Key Card)",
-      "consola": "Switch 2",
-      "precio_centimos": 3499,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": false,
-      "disponibilidad": "Entrega a partir de 28/01/2027",
-      "vendedor": "No especificado en listado",
-      "formato": "Game Key Card",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_187150236?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-adorable-adventures-game-key-card-1678218.html",
-      "anterior_centimos": 3499,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 3499
     },
     {
       "nombre": "Nintendo Switch 2 Supermarket Simulator (Game Key Card)",
@@ -6257,9 +6193,25 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_159463289?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-20xx-30xx-aventura-159463279.html",
-      "anterior_centimos": null,
+      "anterior_centimos": 4102,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 4102
+    },
+    {
+      "nombre": "Juego Nintendo Switch 2 - SWITCH 2 BRAVELY DEFAULT FLYING FAIRY, Juego de rol",
+      "consola": "Switch 2",
+      "precio_centimos": 4156,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 06/11/2026 - 10/11/2026",
+      "vendedor": "PROCOMPONENTES",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_154058223?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-bravely-default-flying-fairy-remaster-juego-de-rol-154058216.html",
+      "anterior_centimos": 4539,
+      "bajada_centimos": 383,
+      "minimo_observado_centimos": 4156
     },
     {
       "nombre": "Nintendo Switch Toy Story: Retro Roundup! + Toy Story 3 Complete Edition Double Pack",
@@ -6662,22 +6614,6 @@
       "minimo_observado_centimos": 4499
     },
     {
-      "nombre": "Nintendo Switch Xeno Crisis",
-      "consola": "Switch",
-      "precio_centimos": 4499,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 03/11/2026",
-      "vendedor": "No especificado en listado",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_174687509?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-xeno-crisis-1627771.html",
-      "anterior_centimos": 4499,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 4499
-    },
-    {
       "nombre": "Nintendo Switch 2 Shinobi Art of Vengeance Deluxe Edition",
       "consola": "Switch 2",
       "precio_centimos": 4499,
@@ -7028,6 +6964,22 @@
       "anterior_centimos": 4799,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 4799
+    },
+    {
+      "nombre": "Nintendo Switch Xeno Crisis",
+      "consola": "Switch",
+      "precio_centimos": 4799,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 03/11/2026",
+      "vendedor": "No especificado en listado",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_174687509?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-xeno-crisis-1627771.html",
+      "anterior_centimos": 4499,
+      "bajada_centimos": 0,
+      "minimo_observado_centimos": 4499
     },
     {
       "nombre": "Nintendo Switch 2 Muramasa: Revenant Blades",
@@ -7382,22 +7334,6 @@
       "minimo_observado_centimos": 4999
     },
     {
-      "nombre": "Nintendo Switch Village in the Shade. Deluxe Edition",
-      "consola": "Switch",
-      "precio_centimos": 4999,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 03/11/2026",
-      "vendedor": "No especificado en listado",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_174263476?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-village-in-the-shade-deluxe-edition-1625837.html",
-      "anterior_centimos": 4999,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 4999
-    },
-    {
       "nombre": "Nintendo Switch Pokémon Escarlata",
       "consola": "Switch",
       "precio_centimos": 4999,
@@ -7652,22 +7588,6 @@
       "anterior_centimos": 4999,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 4999
-    },
-    {
-      "nombre": "Nintendo Switch Birushana: Winds of Fate",
-      "consola": "Switch",
-      "precio_centimos": 4999,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 03/11/2026",
-      "vendedor": "No especificado en listado",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_172289907?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-birushana-winds-of-fate-1622352.html",
-      "anterior_centimos": 4999,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 4799
     },
     {
       "nombre": "Nintendo Switch 2 Ys VIII: Lacrimosa of DANA Special Edition (Game Key Card)",
@@ -7990,6 +7910,22 @@
       "minimo_observado_centimos": 4799
     },
     {
+      "nombre": "Nintendo Switch Village in the Shade. Deluxe Edition",
+      "consola": "Switch",
+      "precio_centimos": 5199,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 03/11/2026",
+      "vendedor": "No especificado en listado",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_174263476?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-village-in-the-shade-deluxe-edition-1625837.html",
+      "anterior_centimos": 4999,
+      "bajada_centimos": 0,
+      "minimo_observado_centimos": 4999
+    },
+    {
       "nombre": "Nintendo Switch The Legend of Zelda: Link's Awakening",
       "consola": "Switch",
       "precio_centimos": 5199,
@@ -8209,8 +8145,8 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-81604089?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-luigi-s-mansion-3-1458164.html",
-      "anterior_centimos": 5399,
-      "bajada_centimos": 100,
+      "anterior_centimos": 5299,
+      "bajada_centimos": 0,
       "minimo_observado_centimos": 5299
     },
     {
@@ -8257,9 +8193,25 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_90898508?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-kirby-y-la-tierra-olvidada-1525822.html",
-      "anterior_centimos": 5399,
-      "bajada_centimos": 100,
+      "anterior_centimos": 5299,
+      "bajada_centimos": 0,
       "minimo_observado_centimos": 4999
+    },
+    {
+      "nombre": "Nintendo Switch Birushana: Winds of Fate",
+      "consola": "Switch",
+      "precio_centimos": 5299,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 03/11/2026",
+      "vendedor": "No especificado en listado",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_172289907?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-birushana-winds-of-fate-1622352.html",
+      "anterior_centimos": 4999,
+      "bajada_centimos": 0,
+      "minimo_observado_centimos": 4799
     },
     {
       "nombre": "Nintendo Switch 2 Sports Resort",
@@ -8406,22 +8358,6 @@
       "minimo_observado_centimos": 5399
     },
     {
-      "nombre": "Juego Nintendo Switch - SWITCH DETECTIVE PIKACHU: EL REGRESO, Aventura",
-      "consola": "Switch",
-      "precio_centimos": 5465,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 04/11/2026",
-      "vendedor": "infopavon",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_107511351?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-detective-pikachu-el-regreso-107511348.html",
-      "anterior_centimos": 5477,
-      "bajada_centimos": 12,
-      "minimo_observado_centimos": 5465
-    },
-    {
       "nombre": "Nintendo Switch 2 Metaphor ReFantazio Steelbook Edition (Game Key Card)",
       "consola": "Switch 2",
       "precio_centimos": 5499,
@@ -8550,36 +8486,20 @@
       "minimo_observado_centimos": 5599
     },
     {
-      "nombre": "Nintendo Switch Trails in the Sky 2nd Chapter",
-      "consola": "Switch",
-      "precio_centimos": 5599,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 03/11/2026",
-      "vendedor": "No especificado en listado",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_172828045?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-trails-in-the-sky-2nd-chapter-1623936.html",
-      "anterior_centimos": 5599,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 5599
-    },
-    {
-      "nombre": "Nintendo Switch 2 Animal Crossing: New Horizons",
+      "nombre": "Juego Nintendo Switch 2 - SWITCH 2 ABSOLUM, Acción",
       "consola": "Switch 2",
-      "precio_centimos": 5599,
+      "precio_centimos": 5611,
       "referencia_centimos": null,
       "descuento": 0,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 03/11/2026",
-      "vendedor": "No especificado en listado",
+      "disponible_online": false,
+      "disponibilidad": "Entrega 17/11/2026 - 19/11/2026",
+      "vendedor": "Blan SRL ES",
       "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_165277749?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-animal-crossing-new-horizons-1610540.html",
-      "anterior_centimos": 5599,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 5599
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_175542291?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-absolum-ns2-accion-175526046.html",
+      "anterior_centimos": 5612,
+      "bajada_centimos": 1,
+      "minimo_observado_centimos": 5611
     },
     {
       "nombre": "Juego Nintendo Switch - SWITCH SUPER MARIO RPG, Plataformas",
@@ -8630,22 +8550,6 @@
       "minimo_observado_centimos": 5612
     },
     {
-      "nombre": "Juego Nintendo Switch 2 - SWITCH 2 ABSOLUM, Acción",
-      "consola": "Switch 2",
-      "precio_centimos": 5612,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 04/11/2026",
-      "vendedor": "Todoconsolas",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_175542291?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-absolum-ns2-accion-175526046.html",
-      "anterior_centimos": 5947,
-      "bajada_centimos": 335,
-      "minimo_observado_centimos": 5612
-    },
-    {
       "nombre": "Juego Nintendo Switch 2 - SWITCH 2 RATATAN, Acción",
       "consola": "Switch 2",
       "precio_centimos": 5670,
@@ -8678,6 +8582,22 @@
       "minimo_observado_centimos": 5694
     },
     {
+      "nombre": "Nintendo Switch Trails in the Sky 2nd Chapter",
+      "consola": "Switch",
+      "precio_centimos": 5699,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 03/11/2026",
+      "vendedor": "No especificado en listado",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_172828045?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-trails-in-the-sky-2nd-chapter-1623936.html",
+      "anterior_centimos": 5599,
+      "bajada_centimos": 0,
+      "minimo_observado_centimos": 5599
+    },
+    {
       "nombre": "Nintendo Switch Octopath Traveler 0",
       "consola": "Switch",
       "precio_centimos": 5699,
@@ -8689,7 +8609,7 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_159412222?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-octopath-traveler-0-1604412.html",
-      "anterior_centimos": 5599,
+      "anterior_centimos": 5699,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 5599
     },
@@ -8870,6 +8790,22 @@
       "minimo_observado_centimos": 5802
     },
     {
+      "nombre": "Juego Nintendo Switch 2 - Moonlight Peaks Nintendo Switch 2, Simulaciones",
+      "consola": "Switch 2",
+      "precio_centimos": 5833,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": false,
+      "disponibilidad": "Entrega 17/11/2026 - 19/11/2026",
+      "vendedor": "Blan SRL ES",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_179667908?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-moonlight-peaks-nintendo-switch-2-simulaciones-179667791.html",
+      "anterior_centimos": 5836,
+      "bajada_centimos": 3,
+      "minimo_observado_centimos": 5833
+    },
+    {
       "nombre": "Nintendo Switch Final Fantasy Resonance",
       "consola": "Switch",
       "precio_centimos": 5899,
@@ -8884,6 +8820,22 @@
       "anterior_centimos": 5899,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 5799
+    },
+    {
+      "nombre": "Nintendo Switch 2 Animal Crossing: New Horizons",
+      "consola": "Switch 2",
+      "precio_centimos": 5899,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 03/11/2026",
+      "vendedor": "No especificado en listado",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_165277749?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-animal-crossing-new-horizons-1610540.html",
+      "anterior_centimos": 5599,
+      "bajada_centimos": 0,
+      "minimo_observado_centimos": 5599
     },
     {
       "nombre": "Nintendo Switch 2 Leyendas Pokémon: Z-A (Nintendo Switch 2 Edition)",
@@ -9254,6 +9206,22 @@
       "minimo_observado_centimos": 6099
     },
     {
+      "nombre": "Nintendo Switch 2 Yoshi y el libro misterioso",
+      "consola": "Switch 2",
+      "precio_centimos": 6099,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 03/11/2026",
+      "vendedor": "No especificado en listado",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_172899320?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-yoshi-y-el-libro-misterioso-1623929.html",
+      "anterior_centimos": 6199,
+      "bajada_centimos": 100,
+      "minimo_observado_centimos": 6099
+    },
+    {
       "nombre": "Juego Nintendo Switch 2 - ASSASSIN'S CREED SH NSW2, Acción",
       "consola": "Switch 2",
       "precio_centimos": 6148,
@@ -9268,22 +9236,6 @@
       "anterior_centimos": 6148,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 6148
-    },
-    {
-      "nombre": "Nintendo Switch 2 Yoshi y el libro misterioso",
-      "consola": "Switch 2",
-      "precio_centimos": 6199,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": true,
-      "disponibilidad": "Disponible online Entrega 03/11/2026",
-      "vendedor": "No especificado en listado",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_172899320?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-yoshi-y-el-libro-misterioso-1623929.html",
-      "anterior_centimos": 6299,
-      "bajada_centimos": 100,
-      "minimo_observado_centimos": 6199
     },
     {
       "nombre": "Nintendo Switch 2 Persona 3 Reload (Game Key Card)",
@@ -9361,9 +9313,25 @@
       "formato": "Game Key Card",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_178979663?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-my-hero-academia-alls-justice-game-key-card-1669040.html",
-      "anterior_centimos": 6299,
+      "anterior_centimos": 6399,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 6299
+    },
+    {
+      "nombre": "Juego Nintendo Switch 2 - SWITCH 2 VIRTUA FIGHTER 5 R.E.V.O. WORLD STAGE 30T, Acción",
+      "consola": "Switch 2",
+      "precio_centimos": 6498,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": false,
+      "disponibilidad": "Entrega 17/11/2026 - 19/11/2026",
+      "vendedor": "Blan SRL ES",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_175388410?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-virtua-fighter-5-revo-world-stage-30th-anniversary-edition-ns2-juego-de-lucha-172073134.html",
+      "anterior_centimos": 6499,
+      "bajada_centimos": 1,
+      "minimo_observado_centimos": 5360
     },
     {
       "nombre": "Nintendo Switch 2 Trails in the Sky 2nd Chapter",
@@ -9953,8 +9921,8 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_152328165?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-super-mario-party-jamboree-jamboree-tv-switch-2-edition-1598261.html",
-      "anterior_centimos": 7299,
-      "bajada_centimos": 100,
+      "anterior_centimos": 7199,
+      "bajada_centimos": 0,
       "minimo_observado_centimos": 7199
     },
     {
@@ -9969,8 +9937,8 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_161880697?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-mario-tennis-fever-1606693.html",
-      "anterior_centimos": 7299,
-      "bajada_centimos": 100,
+      "anterior_centimos": 7199,
+      "bajada_centimos": 0,
       "minimo_observado_centimos": 7199
     },
     {
@@ -10036,6 +10004,22 @@
       "anterior_centimos": 7299,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 7299
+    },
+    {
+      "nombre": "Juego Nintendo Switch 2 - SWITCH 2 DISGAEA 7 COMPLETE - DELUXE EDITION, Anime",
+      "consola": "Switch 2",
+      "precio_centimos": 7468,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": false,
+      "disponibilidad": "Entrega 17/11/2026 - 19/11/2026",
+      "vendedor": "Blan SRL ES",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_157423826?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-disgaea-7-complete-anime-157423818.html",
+      "anterior_centimos": 7640,
+      "bajada_centimos": 172,
+      "minimo_observado_centimos": 6951
     },
     {
       "nombre": "Nintendo Switch Professor Layton and the New World of Steam Multi-Language (Incluye español), Imp Japón",
@@ -10182,6 +10166,22 @@
       "minimo_observado_centimos": 7512
     },
     {
+      "nombre": "Juego Nintendo Switch 2 - Signature Edition [NSW2] (F/I), Simulaciones",
+      "consola": "Switch 2",
+      "precio_centimos": 7526,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": false,
+      "disponibilidad": "Entrega 17/11/2026 - 19/11/2026",
+      "vendedor": "Blan SRL ES",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_173841006?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-signature-edition-nsw2-fi-simulaciones-173242246.html",
+      "anterior_centimos": 7527,
+      "bajada_centimos": 1,
+      "minimo_observado_centimos": 7432
+    },
+    {
       "nombre": "Nintendo Switch 2 Kingdom Hearts Collection (I-II) (Game Key Card)",
       "consola": "Switch 2",
       "precio_centimos": 7599,
@@ -10257,7 +10257,7 @@
       "formato": "Código",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_174978324?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-fallout-4-anniversary-edition-codigo-en-caja-para-nintendo-switch-2-juego-de-rol-174957698.html",
-      "anterior_centimos": 7699,
+      "anterior_centimos": 7700,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 7505
     },
@@ -10273,7 +10273,7 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_174978489?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-the-elder-scrolls-v-skyrim-anniversary-edition-juego-de-rol-174957811.html",
-      "anterior_centimos": 7699,
+      "anterior_centimos": 7700,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 7504
     },
@@ -10472,18 +10472,18 @@
     {
       "nombre": "Juego Nintendo Switch 2 - The Adventures of Elliot: The Millennium Tales, para Nintendo Switch, Estándar, Aventura",
       "consola": "Switch 2",
-      "precio_centimos": 8357,
+      "precio_centimos": 8354,
       "referencia_centimos": null,
       "descuento": 0,
       "disponible_online": false,
-      "disponibilidad": "Entrega 24/11/2026 - 26/11/2026",
-      "vendedor": "Electro MGD",
+      "disponibilidad": "Entrega 17/11/2026 - 19/11/2026",
+      "vendedor": "Blan SRL ES",
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_177671293?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-the-adventures-of-elliot-the-millennium-tales-para-nintendo-switch-estandar-aventura-177671215.html",
-      "anterior_centimos": 8358,
-      "bajada_centimos": 1,
-      "minimo_observado_centimos": 8357
+      "anterior_centimos": 8357,
+      "bajada_centimos": 3,
+      "minimo_observado_centimos": 8354
     },
     {
       "nombre": "Juego Nintendo Switch 2 - Elden Ring. Tarnished Edition Nintendo Switch 2, Acción",
@@ -10518,22 +10518,6 @@
       "minimo_observado_centimos": 8499
     },
     {
-      "nombre": "Nintendo Switch 2 Moonlighter 2: The Endless Vault Collector Edition",
-      "consola": "Switch 2",
-      "precio_centimos": 8499,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": false,
-      "disponibilidad": "Entrega a partir de 27/11/2026",
-      "vendedor": "No especificado en listado",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_187671819?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_nintendo-switch-2-moonlighter-2-the-endless-vault-collector-edition-1678560.html",
-      "anterior_centimos": 8499,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 8499
-    },
-    {
       "nombre": "Nintendo Switch 2 Dave The Diver: Complete Edition. Ed. Coleccionista",
       "consola": "Switch 2",
       "precio_centimos": 8499,
@@ -10552,17 +10536,17 @@
     {
       "nombre": "Juego Nintendo Switch 2 - Dragon Quest VII Reimagined, para Nintendo Switch 2, Estándar, Género Rol, Aventura",
       "consola": "Switch 2",
-      "precio_centimos": 8577,
+      "precio_centimos": 8576,
       "referencia_centimos": null,
       "descuento": 0,
-      "disponible_online": false,
-      "disponibilidad": "Entrega 11/11/2026 - 17/11/2026",
-      "vendedor": "Gpasplus ES",
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 06/11/2026 - 10/11/2026",
+      "vendedor": "ASD ES",
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_177671302?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-dragon-quest-vii-reimagined-para-nintendo-switch-2-estandar-genero-rol-aventura-177671233.html",
       "anterior_centimos": 8577,
-      "bajada_centimos": 0,
+      "bajada_centimos": 1,
       "minimo_observado_centimos": 8499
     },
     {
@@ -10584,7 +10568,7 @@
     {
       "nombre": "Juego Nintendo Switch 2 - Dragon Quest I & II HD-2D, para Nintendo Switch, Remake HD-2D, Género Rol, Aventura",
       "consola": "Switch 2",
-      "precio_centimos": 8718,
+      "precio_centimos": 8720,
       "referencia_centimos": null,
       "descuento": 0,
       "disponible_online": false,
@@ -10593,7 +10577,7 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_176643926?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-dragon-quest-i-and-ii-hd-2d-para-nintendo-switch-remake-hd-2d-genero-rol-aventura-176634466.html",
-      "anterior_centimos": 8717,
+      "anterior_centimos": 8718,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 8499
     },
@@ -10753,7 +10737,7 @@
       "formato": "No especificado",
       "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_159463518?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
       "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-ins118701-aventura-159463516.html",
-      "anterior_centimos": 9654,
+      "anterior_centimos": 9655,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 9473
     },
@@ -10772,22 +10756,6 @@
       "anterior_centimos": 10038,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 10038
-    },
-    {
-      "nombre": "Juego Nintendo Switch 2 - Indiana Jones y el Gran Círculo, Acción",
-      "consola": "Switch 2",
-      "precio_centimos": 10354,
-      "referencia_centimos": null,
-      "descuento": 0,
-      "disponible_online": false,
-      "disponibilidad": "Entrega 09/11/2026 - 11/11/2026",
-      "vendedor": "M24",
-      "formato": "No especificado",
-      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_173496347?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
-      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-indiana-jones-y-el-gran-circulo-accion-173496239.html",
-      "anterior_centimos": 10354,
-      "bajada_centimos": 0,
-      "minimo_observado_centimos": 10354
     },
     {
       "nombre": "Nintendo Switch Birushana: Rising Flower of Genpei & Winds of Fate. Dual Pack",
@@ -10886,6 +10854,22 @@
       "minimo_observado_centimos": 11500
     },
     {
+      "nombre": "Juego Nintendo Switch - 9 R.I.P & 9 R.I.P sequel, Aventura",
+      "consola": "Switch",
+      "precio_centimos": 11652,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": true,
+      "disponibilidad": "Disponible online Entrega 04/11/2026",
+      "vendedor": "Todoconsolas",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_182354198?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-9-rip-and-9-rip-sequel-aventura-182352701.html",
+      "anterior_centimos": null,
+      "bajada_centimos": 0,
+      "minimo_observado_centimos": 11652
+    },
+    {
       "nombre": "Nintendo Switch 2 Metroid Ravenous Edición especial",
       "consola": "Switch 2",
       "precio_centimos": 11900,
@@ -10900,6 +10884,22 @@
       "anterior_centimos": 11900,
       "bajada_centimos": 0,
       "minimo_observado_centimos": 11900
+    },
+    {
+      "nombre": "Juego Nintendo Switch 2 - Indiana Jones y el Gran Círculo, Acción",
+      "consola": "Switch 2",
+      "precio_centimos": 12174,
+      "referencia_centimos": null,
+      "descuento": 0,
+      "disponible_online": false,
+      "disponibilidad": "Entrega 09/11/2026 - 11/11/2026",
+      "vendedor": "M24",
+      "formato": "No especificado",
+      "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_173496347?x=416&y=416&format=webp&quality=60&sp=yes&strip=yes&trim=yes&ex=416&ey=416&align=center&resizesource&unsharp=0.5x0.5",
+      "url": "https://www.mediamarkt.es/es/product/_juego-nintendo-switch-2-indiana-jones-y-el-gran-circulo-accion-173496239.html",
+      "anterior_centimos": 10354,
+      "bajada_centimos": 0,
+      "minimo_observado_centimos": 10354
     },
     {
       "nombre": "Juego Nintendo Switch 2 - NSW2 HADES II /M, para 2, 2 Edition, Género Juegos/Juguetes, Aventura",
